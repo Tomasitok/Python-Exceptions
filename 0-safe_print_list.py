@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
             print(element, end="")
             count += 1
 
-    except:
+    except (ValueError, TypeError):
         pass
 
     finally:
